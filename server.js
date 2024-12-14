@@ -4,10 +4,10 @@ const path = require('path');
 const app = express();
 
 // Serve static files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'Public')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'Public', 'index.html'));
 });
 
 const PORT = 3000;
